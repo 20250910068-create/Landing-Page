@@ -1,0 +1,90 @@
+/* Background utama menggunakan gradasi warna pastel modern */
+html {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 40%, #f78da7 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    color: #2d3436;
+    
+    /* Kartu putih transparan (Glassmorphism effect) */
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    
+    max-width: 680px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Judul Utama dengan efek teks warna-warni (Gradient Text) */
+h1 {
+    background: linear-gradient(45deg, #ff416c, #8a2387, #e94057);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+/* Garis pembatas warna-warni */
+hr {
+    border: 0;
+    height: 4px;
+    background: linear-gradient(to right, #ff416c, #8a2387, #e94057, #f27121);
+    margin: 15px 0 30px 0;
+    border-radius: 4px;
+}
+
+/* Sub-judul dengan background warna soft */
+h2 {
+    color: #5f27cd;
+    font-size: 1.25rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 8px 16px;
+    background: #f1f2f6;
+    border-left: 5px solid #ff6b6b;
+    border-radius: 0 10px 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 28px;
+    transition: transform 0.2s ease;
+}
+
+/* Animasi geser saat cursor di-hover */
+li:hover {
+    transform: translateX(6px);
+}
+
+/* Icon bullet poin warna-warni */
+li::before {
+    content: "✨";
+    position: absolute;
+    left: 4px;
+    font-size: 0.85rem;
+}
+
+/* Kotak "Tentang Saya" dengan warna gradasi lembut */
+blockquote {
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    border-left: 5px solid #6c5ce7;
+    margin: 20px 0;
+    padding: 16px 22px;
+    border-radius: 12px;
+    font-style: italic;
